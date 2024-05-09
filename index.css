@@ -56,7 +56,7 @@ body {
     margin: 1vmin;
 }
 #seccio_1 {
-    display: ;
+    display: none;
     justify-content: center;    /* contingut centrat en la direcció de disposició */
     align-items: center;    /* contingut centrat en la direcció transversal */
     font-size: 4vmax;
