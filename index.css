@@ -32,12 +32,6 @@ body {
     align-items: center;
     font-size: 4vmax;
 }
-#seccio_1 {
-    justify-content: center;    /* contingut centrat en la direcció de disposició */
-    align-items: center;    /* contingut centrat en la direcció transversal */
-    font-size: 4vmax;
-}
-
 #credencials {
     display: flex;
     flex-direction: column;
@@ -61,6 +55,14 @@ body {
     padding: 2vmin;
     margin: 1vmin;
 }
+#seccio_1 {
+    display: ;
+    justify-content: center;    /* contingut centrat en la direcció de disposició */
+    align-items: center;    /* contingut centrat en la direcció transversal */
+    font-size: 4vmax;
+}
+
+
 #menu {
     display: flex;    /* el menú és un contenidor de tipus flex */
     height: 8vmax;
