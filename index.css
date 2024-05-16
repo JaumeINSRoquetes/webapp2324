@@ -61,8 +61,24 @@ body {
     align-items: center;    /* contingut centrat en la direcció transversal */
     font-size: 4vmax;
 }
-
-
+#seccio_2 {
+    display: none;
+    justify-content: center;    /* contingut centrat en la direcció de disposició */
+    align-items: center;    /* contingut centrat en la direcció transversal */
+    font-size: 4vmax;
+}
+#seccio_3 {
+    display: none;
+    justify-content: center;    /* contingut centrat en la direcció de disposició */
+    align-items: center;    /* contingut centrat en la direcció transversal */
+    font-size: 4vmax;
+}
+#seccio_4 {
+    display: none;
+    justify-content: center;    /* contingut centrat en la direcció de disposició */
+    align-items: center;    /* contingut centrat en la direcció transversal */
+    font-size: 4vmax;
+}
 #menu {
     display: flex;    /* el menú és un contenidor de tipus flex */
     height: 8vmax;
