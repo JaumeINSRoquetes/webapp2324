@@ -74,7 +74,7 @@ function tanca_sessio() {
     if (validat) {
         if (confirm("Vols tancar la sessió?")) {    // S'ha respost "Sí"
             storage.setItem("usuari", "");
-            canvia_seccio(0);
+            location.reload();    // recàrrega de la pàgina, es reinicialitzen totes les variables
         }
     }
 }
