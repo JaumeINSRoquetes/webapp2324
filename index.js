@@ -8,6 +8,7 @@ function canvia_seccio(num_boto) {
             boto.style.color = "#950E17";    // es destaca la secció activa amb el canvi de colors del botó corresponent
             boto.style.backgroundColor = "#FCDEE0";
             seccio.style.display = "flex";    // es fa visible la secció activa
+            "seccio_0".style.display = "flex";
         }
         else {
             boto.style.color = "white";    // colors dels botons de seccions inactives
