@@ -73,7 +73,7 @@ function nou_usuari() {
 function tanca_sessio() {
     if (validat) {
         if (confirm("Vols tancar la sessió?")) {    // S'ha respost "Sí"
-            location.reload();    // recàrrega de la pàgina, es reinicialitzen totes les variables
+location.reload();    // recàrrega de la pàgina, es reinicialitzen totes les variables
         }
     }
 }
