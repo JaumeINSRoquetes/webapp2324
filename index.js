@@ -88,7 +88,7 @@ window.onload = () => {
     document.getElementById("obturador").addEventListener("change", function() {    // procediment que s'executa quan s'obté el fitxer de la foto realitzada (esdeveniment "change")
         if(this.files[0] != undefined) {    // instruccions que s'executen només si s'obté algun fitxer (només es processa el primer que es rebi)
             let canvas = document.getElementById("canvas");    // contenidor on es desa temporalment la imatge
-            let context = canvas.getContext("2d");
+            let context = canvas.getContext("2d").drawImage(video, 0, 0, width, height);//abans era let context = canvas.getContext("2d")
             let imatge = new Image;
             imatge.src = URL.createObjectURL(this.files[0]);    // es crea la imatge a partir del fitxer
             imatge.onload = () => {    // procediment que s'executa un cop la imatge s'ha carregat en el contenidor
