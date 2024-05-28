@@ -14,6 +14,9 @@ function canvia_seccio(num_boto) {
             boto.style.backgroundColor = "#950E17";
             seccio.style.display = "none";    // s'oculten les seccions inactives
         }
+        if (num_boto == 4) {
+    mapa.invalidateSize();
+}
     }
 }
 let validat = false;    // variable que permet saber si hi ha algun usuari validat
