@@ -187,3 +187,15 @@ async function inicia_video() {
         prediccions.appendChild(document.createElement("div"));    // es crea un contenidor per a la coincidència de cada tipus d'imatge
     }
 }
+async function loop() {
+    webcam.update();
+    await prediu();
+    window.requestAnimationFrame(loop);
+}
+async function prediu() {
+    const prediccio = await model.predict(webcam.canvas);
+    for (let i = 0; i < maxPrediccions; i++) {
+        const classe = prediccio[i].className + ": " + prediccio[i].probability.toFixed(2);    // es conserven dues xifres decimals
+        prediccions.childNodes[i].innerHTML = classe;
+    }
+}
