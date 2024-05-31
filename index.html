@@ -7,6 +7,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/solid.min.css">
         <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js">    // s'utilitza la IA de TensorFlow </script>
+        <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script> 
         <meta charset="UTF-8">    <!-- codificació del text (UTF-8) -->
         <meta name="viewport" content="width=device-width, initial-scale=1">    <!-- adapta la visualització a les mides de la pantalla -->
         <meta name="description" content="Descripció de la nostra webapp.">    <!-- breu descripció per als cercadors -->
@@ -78,11 +80,12 @@
             <i id="boto_2" class="fa-solid fa-camera" onclick="canvia_seccio(2)"></i>
             <i id="boto_3" class="fa-solid fa-image" onclick="canvia_seccio(3)"></i>
             <i id="boto_4" class="fa-solid fa-map" onclick="canvia_seccio(4)"></i>
+            <i id="boto_5" class="fa-solid fa-brain" onclick="canvia_seccio(5)"></i>
             <i class="fa-solid fa-right-from-bracket" onclick="tanca_sessio()"></i>
         </div>
             <div id="seccio_5" class="seccio">
       <div>
-        <i id="icona_video" class="fa-solid fa-video"></i>    <!-- icona d'una càmera de vídeo -->
+        <i id="icona_video" class="fa-solid fa-video" onclick="inicia_video()"></i>
         <div id="webcam-container"></div>    <!-- contenidor de vídeo -->
       </div>
       <div id="reconeixement">    <!-- espai per visualitzar les dades -->
