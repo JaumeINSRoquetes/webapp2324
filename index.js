@@ -17,9 +17,7 @@ function canvia_seccio(num_boto) {
         if (num_boto == 4) {
     mapa.invalidateSize();
 }
-    if (num_boto == 5) {
-    webcam.invalidateSize();
-}    
+   
     }
 }
 let validat = false;    // variable que permet saber si hi ha algun usuari validat
