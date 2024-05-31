@@ -176,7 +176,7 @@ async function inicia_video() {
     const metadataURL = tmURL + "/metadata.json";
     model = await tmImage.load(modelURL, metadataURL);
     maxPrediccions = model.getTotalClasses();    // nombre de tipus d'imatges per reconèixer
-    webcam = new tmImage.Webcam(300, 300, true);    // posada en marxa de la webcam
+    webcam = new tmImage.Webcam(400, 600, true);    // posada en marxa de la webcam
     await webcam.setup();
     await webcam.play();
     window.requestAnimationFrame(loop);    // bucle
