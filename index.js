@@ -1,6 +1,6 @@
 let validat = false;    // variable que permet saber si hi ha algun usuari validat
 let nom, contrasenya;
-let scriptURL = "https://script.google.com/macros/s/AKfycbwUn7-hIc7TXmfP8vCOQxIOex2xEAgcyTiZnabFQ3XG0rd8x5VJKynM9EBUmlUvpdpm/exec"    // s'ha de substituir la cadena de text per la URL del script
+let scriptURL = "https://script.google.com/macros/s/AKfycbxln8tQ7ZeR4DxEhFmN_nUYzcQ5zSprWGd_0gmD8aivRuzHywSMVNsS3ie8ojJR7E7x/exec"    // s'ha de substituir la cadena de text per la URL del script
 
 function canvia_seccio(num_boto) {
     const menu = document.getElementById("menu");
